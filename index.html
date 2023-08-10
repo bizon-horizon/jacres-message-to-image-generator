@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+
+</style>
+
+<head>
+
+  <script type="text/javascript">
+
+    var text = ""
+
+    function set_text() {
+      var entered_text = document.getElementById("user_Text").value
+      text = entered_text
+      document.getElementById("picture_text").textContent = text
+    }
+
+  </script>
+
+</head>
+
+<div style="text-align: center; align-items: center;width: 512px; height: 512px; display: table-cell; table-layout: fixed;">
+  
+  <textarea onmousedown="set_text()" onmouseleave="set_text()" placeholder="Enter text here." id="user_Text"
+    style="width: 512px; resize: none;"></textarea>
+
+  <div
+    style="background-color: black; color: white; text-align: center; justify-content: center; font-family: Arial; word-wrap: break-word; vertical-align: middle; width: 512px; height: 512px; overflow: hidden;"
+    id="background_image">
+    
+    <h1 id="picture_text" style="margin-left: 20px; margin-right: 20px; vertical-align: middle;">This is your image.
+    </h1>
+    
+  </div>
+  
+</div>
+
+
+</html>
