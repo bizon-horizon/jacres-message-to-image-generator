@@ -21,18 +21,133 @@
 
   <script type="text/javascript">
 
-    var text = ""
+    var text = "";
 
     function set_text() {
 
-      var entered_text = document.getElementById("user_Text").value
+      var entered_text = document.getElementById("user_Text").value;
 
-      text = entered_text
+      text = entered_text;
 
-      document.getElementById("picture_text").textContent = text
+      document.getElementById("picture_text").textContent = text;
 
     }
 
+
+
+
+
+    function redbackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "red";
+
+    }
+
+    function yellowbackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "yellow";
+
+    }
+
+    function bluebackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "blue";
+
+    }
+
+    function greenbackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "green";
+
+    }
+
+    function purplebackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "purple";
+
+    }
+
+    function brownbackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "brown";
+
+    }
+
+    function blackbackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "black";
+
+    }
+
+    function whitebackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "#fafafa";
+
+    }
+
+    function graybackground() {
+
+      document.getElementById("background_image").style.backgroundColor = "gray";
+
+    }
+
+
+
+
+
+    function redtext() {
+
+      document.getElementById("background_image").style.color = "red";
+
+    }
+
+    function yellowtext() {
+
+      document.getElementById("background_image").style.color = "yellow";
+
+    }
+
+    function bluetext() {
+
+      document.getElementById("background_image").style.color = "blue";
+
+    }
+
+    function greentext() {
+
+      document.getElementById("background_image").style.color = "green";
+
+    }
+
+    function purpletext() {
+
+      document.getElementById("background_image").style.color = "purple";
+
+    }
+
+    function browntext() {
+
+      document.getElementById("background_image").style.color = "brown";
+
+    }
+
+    function blacktext() {
+
+      document.getElementById("background_image").style.color = "black";
+
+    }
+
+    function whitetext() {
+
+      document.getElementById("background_image").style.color = "#fafafa";
+
+    }
+
+    function graytext() {
+
+      document.getElementById("background_image").style.color = "gray";
+
+    }
   </script>
 
 </head>
@@ -60,46 +175,100 @@
 
 
 
-  <table
-    style="width: 512px; height:512px; background-color: black; color:white; text-align: center; vertical-align: middle; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; word-wrap: break-word; table-layout: fixed; font-family: Arial; font-weight: bold; font-size: 30px; overflow: hidden; margin-bottom: 50px;">
+  <table id="background_image"
+    style="width: 512px; height:512px; background-color: black; color:white; text-align: center; vertical-align: middle; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; word-wrap: break-word; table-layout: fixed; font-family: Arial; font-weight: bold; font-size: 30px; overflow: hidden; margin-bottom: 50px; border: 1px solid darkgray">
 
-    <th id="picture_text" style="margin-left:20px; margin-right:20px">Your message will display here.</th>
+    <th id=" picture_text" style="margin-left:20px; margin-right:20px">Your message will display here.</th>
 
   </table>
 
-  <div id="customization">
+  <div id="customization" style="margin-bottom:50px;">
 
     <div style="float:left; width:50%;">
       <h3 style="color:black; font-family: Arial;"> Select Background Color</h3>
-        <div>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:red; color:red;">Red</button>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:yellow; color:yellow;">Yellow</button>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:blue; color:blue;">Blue</button>
-        </div>
+      <div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:red; color:red;"
+          onclick="redbackground()">Red</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:yellow; color:yellow;"
+          onclick="yellowbackground()">Yellow</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:blue; color:blue;"
+          onclick="bluebackground()">Blue</button>
+      </div>
 
       <div>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:green; color:green;">Green</button>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:purple; color:purple;">Purple</button>
-          <button style="width:50px; height:50px; margin-left:50px; background-color:brown; color:brown;">Brown</button>
-        </div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:green; color:green;"
+          onclick="greenbackground()">Green</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:purple; color:purple;"
+          onclick="purplebackground()">Purple</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:brown; color:brown;"
+          onclick="brownbackground()">Brown</button>
+      </div>
+
+      <div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:black; color:black;"
+          onclick="blackbackground()">black</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:#fafafa; color:#fafafa;"
+          onclick="whitebackground()">white</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:gray; color:gray;"
+          onclick="graybackground()">gray</button>
+      </div>
 
     </div>
 
     <div style="float:left; width:50%;">
+
+
       <h3 style="color:black; font-family: Arial;"> Select Text Color</h3>
+
+      <div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:red; color:red;"
+          onclick="redtext()">Red</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:yellow; color:yellow;"
+          onclick="yellowtext()">Yellow</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:blue; color:blue;"
+          onclick="bluetext()">Blue</button>
+      </div>
+
+      <div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:green; color:green;"
+          onclick="greentext()">Green</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:purple; color:purple;"
+          onclick="purpletext()">Purple</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:brown; color:brown;"
+          onclick="browntext()">Brown</button>
+      </div>
+
+      <div>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:black; color:black;"
+          onclick="blacktext()">black</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:#fafafa; color:#fafafa;"
+          onclick="whitetext()">white</button>
+        <button style="width:50px; height:50px; margin-bottom:5px; background-color:gray; color:gray;"
+          onclick="graytext()">gray</button>
+      </div>
+
     </div>
-    
-  </div>
- 
-    
   </div>
 
 
-  
-  <h5 style="color:black; font-family: Arial;">
-    This tool is made by JACRES, coded in GitHub, then powered by Vercel.com.
+
+  </div>
+
+
+
+
+  </div>
+
+
+  <div>
+  </div>
+
+  <h1 style="color:transparent"> SPACER </h1>
+  <h1 style="color:transparent"> SPACER </h1>
+  <h5 style="color:black; font-family: Arial; margin-top:50px;">
+    Tool by JACRES.  Coded in GitHub.  Powered by Vercel.
 
   </h5>
-
+</body>
 
 </body>
